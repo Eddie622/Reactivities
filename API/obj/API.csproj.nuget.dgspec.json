@@ -47,6 +47,16 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -101,8 +111,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\Domain.csproj"
+              "c:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\Domain.csproj"
               },
               "C:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Persistence\\Persistence.csproj": {
                 "projectPath": "C:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Persistence\\Persistence.csproj"
@@ -138,14 +148,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\Domain.csproj": {
+    "c:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\Domain.csproj",
+        "projectPath": "c:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\obj\\",
+        "outputPath": "c:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -222,8 +232,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\Domain.csproj"
+              "c:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\Admin\\Desktop\\NEW-Projects\\Reactivities\\Domain\\Domain.csproj"
               }
             }
           }
@@ -237,6 +247,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
